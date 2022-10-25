@@ -38,12 +38,19 @@ export default {
         },
     },
     beforeUpdate() {
-        if(this.month <= 2) {
+        if(this.month == 2) {
             alert('2개월 이상 입력');
             this.month = 3;
         }
         console.log(this.month);
     },
+    // updated() {
+    //     if(this.month <= 2) {
+    //         alert('2개월 이상 입력');
+    //         this.month = 3;
+    //     }
+    //     console.log(this.month);
+    // },
     props: {
         onerooms: Array,
         modalContent: Number,
